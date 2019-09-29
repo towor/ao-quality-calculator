@@ -1,4 +1,8 @@
 @charset "utf-8";
+h2{
+    margin: 10px;
+    text-align: center;
+}
 
 #app{
     margin: 50px auto;
