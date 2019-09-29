@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AO-Quality-Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"> </script>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <div class="display">
+            <p>{{calcProcess}}</p>
+            <p>Result：{{result}}</p>
+        </div>
+        <div class="button-wrapper">
+            <div class="column-wrapper">
+                <button v-on:click="calc('10')">10</button>
+                <button v-on:click="calc('11')">11</button>
+                <button v-on:click="calc('12')">12</button>
+                <button v-on:click="calc('13')">13</button>
+                <button v-on:click="calc('14')">14</button>
+                <button v-on:click="calc('15')">15</button>
+                <button v-on:click="calc('16')">16</button>
+                <button v-on:click="calc('17')">17</button>
+                <button v-on:click="calc('18')">18</button>
+                <button v-on:click="calc('19')">19</button>
+            </div>
+
+            <div class="column-wrapper">
+                <button v-on:click="calc('20')">20</button>
+                <button v-on:click="calc('21')">21</button>
+                <button v-on:click="calc('22')">22</button>
+                <button v-on:click="calc('23')">23</button>
+                <button v-on:click="calc('24')">24</button>
+                <button v-on:click="calc('25')">25</button>
+                <button v-on:click="calc('26')">26</button>
+                <button v-on:click="calc('27')">27</button>
+                <button v-on:click="calc('28')">28</button>
+                <button v-on:click="calc('29')">29</button>
+            </div>
+
+            <div class="column-wrapper">
+                <button v-on:click="calc('30')">30</button>
+                <button v-on:click="calc('31')">31</button>
+                <button v-on:click="calc('32')">32</button>
+                <button v-on:click="calc('33')">33</button>
+                <button v-on:click="calc('34')">34</button>
+                <button v-on:click="calc('35')">35</button>
+                <button v-on:click="calc('36')">36</button>
+                <button v-on:click="calc('37')">37</button>
+                <button v-on:click="calc('38')">38</button>
+                <button v-on:click="calc('39')">39</button>
+            </div>
+
+            <div class="column-wrapper">
+                <button v-on:click="calc('40')">40</button>
+                <button v-on:click="calc('41')">41</button>
+                <button v-on:click="calc('42')">42</button>
+                <button v-on:click="calc('43')">43</button>
+                <button v-on:click="calc('44')">44</button>
+                <button v-on:click="calc('45')">45</button>
+                <button v-on:click="calc('46')">46</button>
+                <button v-on:click="calc('47')">47</button>
+                <button v-on:click="calc('48')">48</button>
+                <button v-on:click="calc('49')">49</button>
+            </div>
+
+            <div class="column-wrapper">
+                <button v-on:click="calc('50')">50</button>
+                <button v-on:click="calc('51')">51</button>
+                <button v-on:click="calc('52')">52</button>
+                <button v-on:click="calc('53')">53</button>
+                <button v-on:click="calc('54')">54</button>
+                <button v-on:click="calc('55')">55</button>
+                <button v-on:click="calc('56')">56</button>
+                <button v-on:click="calc('57')">57</button>
+                <button v-on:click="calc('58')">58</button>
+                <button v-on:click="calc('59')">59</button>
+            </div>
+
+            <div class="column-wrapper">
+                <button v-on:click="calc('60')">60</button>
+                <button v-on:click="calc('61')">61</button>
+                <button v-on:click="calc('62')">62</button>
+                <button v-on:click="calc('63')">63</button>
+                <button v-on:click="calc('64')">64</button>
+                <button v-on:click="calc('65')">65</button>
+                <button v-on:click="calc('66')">66</button>
+                <button v-on:click="calc('67')">67</button>
+                <button v-on:click="calc('68')">68</button>
+                <button v-on:click="calc('69')">69</button>
+            </div>
+
+            <div class="column-wrapper">
+                <button v-on:click="calc('70')">70</button>
+                <button v-on:click="calc('71')">71</button>
+                <button v-on:click="calc('72')">72</button>
+                <button v-on:click="calc('73')">73</button>
+                <button v-on:click="calc('74')">74</button>
+                <button v-on:click="calc('75')">75</button>
+                <button v-on:click="calc('76')">76</button>
+                <button v-on:click="calc('77')">77</button>
+                <button v-on:click="calc('78')">78</button>
+                <button v-on:click="calc('79')">79</button>
+            </div>
+
+            <div class="column-wrapper">
+                <button v-on:click="calc('80')">80</button>
+                <button v-on:click="calc('81')">81</button>
+                <button v-on:click="calc('82')">82</button>
+                <button v-on:click="calc('83')">83</button>
+                <button v-on:click="calc('84')">84</button>
+                <button v-on:click="calc('85')">85</button>
+                <button v-on:click="calc('86')">86</button>
+                <button v-on:click="calc('87')">87</button>
+                <button v-on:click="calc('88')">88</button>
+                <button v-on:click="calc('89')">89</button>
+            </div>
+
+            <div class="column-wrapper">
+                <button v-on:click="calc('90')">90</button>
+                <button v-on:click="calc('91')">91</button>
+                <button v-on:click="calc('92')">92</button>
+                <button v-on:click="calc('93')">93</button>
+                <button v-on:click="calc('94')">94</button>
+                <button v-on:click="calc('95')">95</button>
+                <button v-on:click="calc('96')">96</button>
+                <button v-on:click="calc('97')">97</button>
+                <button v-on:click="calc('98')">98</button>
+                <button v-on:click="calc('99')">99</button>
+            </div>
+
+            <div class="column-wrapper">
+                <button v-on:click="clear">C</button>
+                <button v-bind:disabled="firstFlag" v-on:click="remove">Del</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
